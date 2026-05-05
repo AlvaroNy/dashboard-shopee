@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atacado Sul America - Relatorios</title>
+<title>Relatorios de Performance - Shopee</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -12,35 +12,51 @@ body { font-family: Inter, sans-serif; background: #F7F8FA; min-height: 100vh; d
 .avatar { width: 88px; height: 88px; border-radius: 50%; background: linear-gradient(135deg,#C0392B,#EE4D2D,#FF7337); display: flex; align-items: center; justify-content: center; font-size: 38px; margin-bottom: 4px; box-shadow: 0 8px 24px rgba(238,77,45,.3); }
 .name { font-size: 22px; font-weight: 800; color: #1a1a1a; text-align: center; }
 .tagline { font-size: 13px; color: #888; text-align: center; margin-bottom: 8px; }
-.section-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #bbb; align-self: flex-start; margin-top: 4px; }
+.section-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #bbb; align-self: flex-start; margin-top: 8px; }
 .card { width: 100%; background: white; border-radius: 14px; padding: 18px 20px; display: flex; align-items: center; gap: 14px; text-decoration: none; color: #1a1a1a; box-shadow: 0 2px 12px rgba(0,0,0,.07); transition: transform .15s, box-shadow .15s; border-left: 4px solid #EE4D2D; }
 .card:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,.12); }
-.card.blue { border-left-color: #1A73E8; } .card.green { border-left-color: #34A853; }
 .card-icon { font-size: 26px; flex-shrink: 0; }
 .card-body { flex: 1; }
 .card-title { font-size: 15px; font-weight: 700; color: #1a1a1a; }
 .card-sub { font-size: 12px; color: #999; margin-top: 2px; }
 .card-arrow { font-size: 18px; color: #ccc; flex-shrink: 0; }
-.badge { background: #EE4D2D; color: white; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; flex-shrink: 0; }
+.badge { color: white; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; flex-shrink: 0; }
 .footer { margin-top: 24px; font-size: 11px; color: #ccc; text-align: center; }
 </style>
 </head>
 <body>
 <div class="container">
+
   <div class="avatar">&#128722;</div>
-  <div class="name">Atacado Sul America</div>
-  <div class="tagline">Relatorios de Performance &middot; Shopee</div>
-  <div class="section-label">Relatorios</div>
-  <a class="card" href="relatorio-2026.html">
+  <div class="name">Relatorios Shopee</div>
+  <div class="tagline">Performance por Loja &middot; Produto Pago</div>
+
+  <!-- Atacado Sul América -->
+  <div class="section-label">Atacado Sul America</div>
+
+  <a class="card" href="relatorio-2026.html" style="border-left-color:#EE4D2D">
     <div class="card-icon">&#128202;</div>
     <div class="card-body">
       <div class="card-title">Atacado Sul America 2026</div>
       <div class="card-sub">Janeiro a Abril &middot; Produto Pago</div>
     </div>
-    <span class="badge">Novo</span>
+    <span class="badge" style="background:#EE4D2D">Novo</span>
     <div class="card-arrow">&rsaquo;</div>
   </a>
-  <a class="card green" href="relatorio-linetrends.html">
+
+  <a class="card" href="relatorio-2025.html" style="border-left-color:#c0392b">
+    <div class="card-icon">&#128200;</div>
+    <div class="card-body">
+      <div class="card-title">Atacado Sul America 2025 Completo</div>
+      <div class="card-sub">Janeiro a Dezembro &middot; Produto Pago</div>
+    </div>
+    <div class="card-arrow">&rsaquo;</div>
+  </a>
+
+  <!-- LineTrends -->
+  <div class="section-label">LineTrends</div>
+
+  <a class="card" href="relatorio-linetrends.html" style="border-left-color:#34A853">
     <div class="card-icon">&#128230;</div>
     <div class="card-body">
       <div class="card-title">LineTrends 2026</div>
@@ -49,14 +65,8 @@ body { font-family: Inter, sans-serif; background: #F7F8FA; min-height: 100vh; d
     <span class="badge" style="background:#34A853">Novo</span>
     <div class="card-arrow">&rsaquo;</div>
   </a>
-    <a class="card blue" href="relatorio-2025.html">
-    <div class="card-icon">&#128200;</div>
-    <div class="card-body">
-      <div class="card-title">Atacado Sul America 2025 Completo</div>
-      <div class="card-sub">Janeiro a Dezembro &middot; Produto Pago</div>
-    </div>
-    <div class="card-arrow">&rsaquo;</div>
-  </a>
+
+  <!-- Mix Varejo -->
   <div class="section-label">Mix Varejo</div>
 
   <a class="card" href="relatorio-mix-2026.html" style="border-left-color:#9B59B6">
@@ -78,7 +88,7 @@ body { font-family: Inter, sans-serif; background: #F7F8FA; min-height: 100vh; d
     <div class="card-arrow">&rsaquo;</div>
   </a>
 
-    <div class="footer">Atacado Sul America &copy; 2026</div>
+  <div class="footer">Relatorios Shopee &copy; 2026</div>
 </div>
 </body>
 </html>
